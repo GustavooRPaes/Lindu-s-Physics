@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script/main.js"></script>
+    <link rel="icon" href="img/cerebro.jpg">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <title>Física - Cinemática</title>
+</head>
+<body>
+    <nav class="pesquisar">
+        <div class="logo">
+            <img src="img/cerebro.jpg">
+            <h1>Lindu's Physics™</h1>
+        </div>
+        <div class="menu">
+            <a href="index.html">Início</a>
+            <a href="cinematica.html">Cinemática</a>
+            <a href="termodinamica.html">Termodinâmica</a>
+            <a href="electromagnetismo.html">Eletromagnetismo</a>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="botao">
+            <a href="index.html">Voltar para o menu</a>
+        </div>
+        
+        <div class="secao">
+            <h1>Cinemática</h1>
+            <!-- Fórmula de velocidade -->
+            <div class="content">
+                <h2>Formula da velocidade</h2>
+                <label>Variação de espaço:</label>
+                <input type="number" id="n1c" placeholder="Digite △s (m)">
+                <label>Variação de tempo:</label>
+                <input type="number" id="n2c" placeholder="Digite △t (s)">
+                <input type="button" value="Calcular" onclick="calcac()">
+                <h2>Vm = △s / △t</h2>
+                <h2 id="visorc">0</h2>
+            </div>
+
+            <!-- Fórmula de aceleração -->
+            <div class="content">
+                <h2>Formula de aceleração</h2>
+                <label>Variação de velocidade:</label>
+                <input type="number" id="n1a" placeholder="Digite △v (m/s)">
+                <label>Variação de tempo:</label>
+                <input type="number" id="n2a" placeholder="Digite △t (s)">
+                <input type="button" value="Calcular" onclick="calcfc()">
+                <h2>Am = △v / △t</h2>
+                <h2 id="visora">0</h2>
+            </div>
+            <!-- Fórmulas do Movimento Uniforme (MU) -->
+            <h2>Fórmulas do Movimento Uniforme (MU)</h2>
+            <!-- Função horária do deslocamento -->
+            <div class="content">
+                <h3>Função horária do deslocamento</h3>
+                <label for="n1h">Posição inicial:</label>
+                <input type="number" id="n1h" placeholder="Digite S0 (m)">
+                <label for="n2h">Variação de velocidade:</label>
+                <input type="number" id="n2h" placeholder="Digite v (m/s)">
+                <label for="n3h">Variação de tempo:</label>
+                <input type="number" id="n3h" placeholder="Digite △t (s)">
+                <input type="button" value="Calcular" onclick="calch()">
+                <h2>S = S0 + v · △t</h2>
+                <h2 id="visorh">0</h2>
+            </div>
+
+            <!-- Fórmulas do Movimento Uniformemente Variado (MUV) -->
+            <h2>Fórmulas do Movimento Uniformemente Variado (MUV)</h2>
+            <!-- Equação de Torricelli -->
+            <div class="content">
+                <h3>Equação de Torricelli</h3>
+                <label for="n1v">Velocidade inicial:</label>
+                <input type="number" id="n1v" placeholder="Digite V0 (m)">
+                <label for="n2v">Aceleração:</label>
+                <input type="number" id="n2v" placeholder="Digite a (m/s²)">
+                <label for="n3v">Deslocação:</label>
+                <input type="number" id="n3v" placeholder="Digite △S (m)">
+                <input type="button" value="Calcular" onclick="calcv()">
+                <h2>V² = V0² + 2 · a · △S</h2>
+                <h2 id="visorv">0</h2>
+            </div>
+
+            <!-- Função horária da posição -->
+            <div class="content">
+                <h3>Função horária da posição</h3>
+                <label for="n1p">Posição inicial:</label>
+                <input type="number" id="n1p" placeholder="Digite S0 (m)">
+                <label for="n2p">Velocidade inicial:</label>
+                <input type="number" id="n2p" placeholder="Digite V0 (m)">
+                <label for="n3p">Aceleração:</label>
+                <input type="number" id="n3p" placeholder="Digite a (m/s²)">
+                <label for="n4p">Tempo:</label>
+                <input type="number" id="n4p" placeholder="Digite t (s)">
+                <input type="button" value="Calcular" onclick="calcp()">
+                <h2>S = S0 + V0·t + ½ a·t²</h2>
+                <h2 id="visorp">0</h2>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div> Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik"> Freepik </a>
+            from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
+        <p>Todos os direitos reservados.®</p>
+    </footer>
+</body>
+</html>

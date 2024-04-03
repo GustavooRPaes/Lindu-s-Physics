@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script/main.js"></script>
+    <link rel="icon" href="img/cerebro.jpg">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <title>Física - Elestromagnetismo</title>
+</head>
+<body>
+    <nav class="pesquisar">
+        <div class="logo">
+            <img src="img/cerebro.jpg">
+            <h1>Lindu's Physics™</h1>
+        </div>
+        <div class="menu">
+            <a href="index.html">Início</a>
+            <a href="cinematica.html">Cinemática</a>
+            <a href="termodinamica.html">Termodinâmica</a>
+            <a href="electromagnetismo.html">Eletromagnetismo</a>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="botao">
+            <a href="index.html">Voltar para o menu</a>
+        </div>
+        <div class="secao">
+            <h1>Eletromagnetismo</h1>
+            <div class="content">
+                <h2>Fórmulas do eletromagnetismo</h2>
+                <label for="n1elec">Quantidade de elétrons ou prótons:</label>
+                <input type="number" id="n1elec" placeholder="Digite n">
+                <label for="n2elec">Carga elementar:</label>
+                <input type="number" id="n2elec" placeholder="Digite e">
+                <input type="button" value="Calcular" onclick="calcelec()">
+                <h2>Q = n · e</h2>
+                <h2 id="visorelec">0</h2>
+            </div>
+            <div class="content">
+                <h2>Fórmulas da corrente elétrica</h2>
+                <label for="n1corre">Resistência equivalente:</label>
+                <input type="number" id="n1corre" placeholder="Digite R">
+                <label for="n2corre">Corrente elétrica:</label>
+                <input type="number" id="n2corre" placeholder="Digite i">
+                <input type="button" value="Calcular" onclick="calccorre()">
+                <h2>U = R · i</h2>
+                <h2 id="visorcorre">0</h2>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div> Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik"> Freepik </a>
+            from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
+        <p>Todos os direitos reservados.®</p>
+    </footer>
+</body>
+</html>
